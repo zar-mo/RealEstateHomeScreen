@@ -21,6 +21,8 @@
 		C9787FC42C937685006B971C /* HorizontalScroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9787FC22C937685006B971C /* HorizontalScroll.xib */; };
 		C9787FC72C9377AD006B971C /* HorizontalScrollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9787FC52C9377AD006B971C /* HorizontalScrollCell.swift */; };
 		C9787FC82C9377AD006B971C /* HorizontalScrollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9787FC62C9377AD006B971C /* HorizontalScrollCell.xib */; };
+		C9787FCB2C938095006B971C /* ClickableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9787FC92C938095006B971C /* ClickableCell.swift */; };
+		C9787FCC2C938095006B971C /* ClickableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9787FCA2C938095006B971C /* ClickableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		C9787FC22C937685006B971C /* HorizontalScroll.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalScroll.xib; sourceTree = "<group>"; };
 		C9787FC52C9377AD006B971C /* HorizontalScrollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollCell.swift; sourceTree = "<group>"; };
 		C9787FC62C9377AD006B971C /* HorizontalScrollCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalScrollCell.xib; sourceTree = "<group>"; };
+		C9787FC92C938095006B971C /* ClickableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickableCell.swift; sourceTree = "<group>"; };
+		C9787FCA2C938095006B971C /* ClickableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClickableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 			children = (
 				C9787FA12C935A85006B971C /* AppDelegate.swift */,
 				C9787FA32C935A85006B971C /* SceneDelegate.swift */,
+				C9787FC92C938095006B971C /* ClickableCell.swift */,
+				C9787FCA2C938095006B971C /* ClickableCell.xib */,
 				C9787FB92C935D45006B971C /* AmazonCollectionCell.swift */,
 				C9787FBD2C9360CC006B971C /* MenuCollectionCell.swift */,
 				C9787FC12C937685006B971C /* HorizontalScroll.swift */,
@@ -153,6 +159,7 @@
 				C9787FC02C9360CC006B971C /* MenuCollectionCell.xib in Resources */,
 				C9787FC42C937685006B971C /* HorizontalScroll.xib in Resources */,
 				C9787FAE2C935A88006B971C /* Base in Resources */,
+				C9787FCC2C938095006B971C /* ClickableCell.xib in Resources */,
 				C9787FC82C9377AD006B971C /* HorizontalScrollCell.xib in Resources */,
 				C9787FA92C935A85006B971C /* Base in Resources */,
 				C9787FBC2C935D45006B971C /* AmazonCollectionCell.xib in Resources */,
@@ -166,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9787FCB2C938095006B971C /* ClickableCell.swift in Sources */,
 				C9787FA62C935A85006B971C /* ViewController.swift in Sources */,
 				C9787FBF2C9360CC006B971C /* MenuCollectionCell.swift in Sources */,
 				C9787FC72C9377AD006B971C /* HorizontalScrollCell.swift in Sources */,

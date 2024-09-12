@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         registerCollectionCell()
         registerHorizontalScroll()
+        registerClickableview()
         tableView.dataSource = self
     }
     
@@ -30,6 +31,11 @@ class ViewController: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: HorizontalScroll.identifier)
     }
     
+    func registerClickableview(){
+        let nib = UINib(nibName: ClickableCell.identifier, bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: ClickableCell.identifier)
+    }
+    
 
 }
 
@@ -37,7 +43,7 @@ class ViewController: UIViewController {
 extension  ViewController:  UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        2
+        3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -50,6 +56,15 @@ extension  ViewController:  UITableViewDataSource {
             guard let cell = menuCell else {return UITableViewCell()}
             
             return cell
+            
+        case 1:
+            
+            let menuCell = tableView.dequeueReusableCell(withIdentifier: ClickableCell.identifier, for: indexPath) as? ClickableCell
+            
+            guard let cell = menuCell else {return UITableViewCell()}
+            
+            return cell
+            
             
         default:
             
