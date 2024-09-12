@@ -13,6 +13,14 @@
 		C9787FA92C935A85006B971C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C9787FA82C935A85006B971C /* Base */; };
 		C9787FAB2C935A88006B971C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9787FAA2C935A88006B971C /* Assets.xcassets */; };
 		C9787FAE2C935A88006B971C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C9787FAD2C935A88006B971C /* Base */; };
+		C9787FBB2C935D45006B971C /* AmazonCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9787FB92C935D45006B971C /* AmazonCollectionCell.swift */; };
+		C9787FBC2C935D45006B971C /* AmazonCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9787FBA2C935D45006B971C /* AmazonCollectionCell.xib */; };
+		C9787FBF2C9360CC006B971C /* MenuCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9787FBD2C9360CC006B971C /* MenuCollectionCell.swift */; };
+		C9787FC02C9360CC006B971C /* MenuCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9787FBE2C9360CC006B971C /* MenuCollectionCell.xib */; };
+		C9787FC32C937685006B971C /* HorizontalScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9787FC12C937685006B971C /* HorizontalScroll.swift */; };
+		C9787FC42C937685006B971C /* HorizontalScroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9787FC22C937685006B971C /* HorizontalScroll.xib */; };
+		C9787FC72C9377AD006B971C /* HorizontalScrollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9787FC52C9377AD006B971C /* HorizontalScrollCell.swift */; };
+		C9787FC82C9377AD006B971C /* HorizontalScrollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9787FC62C9377AD006B971C /* HorizontalScrollCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		C9787FAA2C935A88006B971C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9787FAD2C935A88006B971C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9787FAF2C935A88006B971C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9787FB92C935D45006B971C /* AmazonCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonCollectionCell.swift; sourceTree = "<group>"; };
+		C9787FBA2C935D45006B971C /* AmazonCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmazonCollectionCell.xib; sourceTree = "<group>"; };
+		C9787FBD2C9360CC006B971C /* MenuCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionCell.swift; sourceTree = "<group>"; };
+		C9787FBE2C9360CC006B971C /* MenuCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCollectionCell.xib; sourceTree = "<group>"; };
+		C9787FC12C937685006B971C /* HorizontalScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScroll.swift; sourceTree = "<group>"; };
+		C9787FC22C937685006B971C /* HorizontalScroll.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalScroll.xib; sourceTree = "<group>"; };
+		C9787FC52C9377AD006B971C /* HorizontalScrollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollCell.swift; sourceTree = "<group>"; };
+		C9787FC62C9377AD006B971C /* HorizontalScrollCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalScrollCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,14 @@
 			children = (
 				C9787FA12C935A85006B971C /* AppDelegate.swift */,
 				C9787FA32C935A85006B971C /* SceneDelegate.swift */,
+				C9787FB92C935D45006B971C /* AmazonCollectionCell.swift */,
+				C9787FBD2C9360CC006B971C /* MenuCollectionCell.swift */,
+				C9787FC12C937685006B971C /* HorizontalScroll.swift */,
+				C9787FC22C937685006B971C /* HorizontalScroll.xib */,
+				C9787FC52C9377AD006B971C /* HorizontalScrollCell.swift */,
+				C9787FC62C9377AD006B971C /* HorizontalScrollCell.xib */,
+				C9787FBE2C9360CC006B971C /* MenuCollectionCell.xib */,
+				C9787FBA2C935D45006B971C /* AmazonCollectionCell.xib */,
 				C9787FA52C935A85006B971C /* ViewController.swift */,
 				C9787FA72C935A85006B971C /* Main.storyboard */,
 				C9787FAA2C935A88006B971C /* Assets.xcassets */,
@@ -126,8 +150,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9787FAB2C935A88006B971C /* Assets.xcassets in Resources */,
+				C9787FC02C9360CC006B971C /* MenuCollectionCell.xib in Resources */,
+				C9787FC42C937685006B971C /* HorizontalScroll.xib in Resources */,
 				C9787FAE2C935A88006B971C /* Base in Resources */,
+				C9787FC82C9377AD006B971C /* HorizontalScrollCell.xib in Resources */,
 				C9787FA92C935A85006B971C /* Base in Resources */,
+				C9787FBC2C935D45006B971C /* AmazonCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +167,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9787FA62C935A85006B971C /* ViewController.swift in Sources */,
+				C9787FBF2C9360CC006B971C /* MenuCollectionCell.swift in Sources */,
+				C9787FC72C9377AD006B971C /* HorizontalScrollCell.swift in Sources */,
+				C9787FC32C937685006B971C /* HorizontalScroll.swift in Sources */,
 				C9787FA22C935A85006B971C /* AppDelegate.swift in Sources */,
 				C9787FA42C935A85006B971C /* SceneDelegate.swift in Sources */,
+				C9787FBB2C935D45006B971C /* AmazonCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +332,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +361,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
