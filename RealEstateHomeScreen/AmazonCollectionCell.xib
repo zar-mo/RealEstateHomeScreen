@@ -13,15 +13,16 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="404" id="KGk-i7-Jjw" customClass="AmazonCollectionCell" customModule="RealEstateHomeScreen" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="422" height="404"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="422" height="404"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PAa-8o-Xza">
-                        <rect key="frame" x="40" y="31" width="300" height="300"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PAa-8o-Xza">
+                        <rect key="frame" x="20" y="20" width="382" height="382"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="PAa-8o-Xza" secondAttribute="height" multiplier="1:1" id="Jhd-Br-HRz"/>
+                            <constraint firstAttribute="width" constant="382" id="ZOx-KL-Weq"/>
                         </constraints>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dR6-k2-a19">
                             <size key="itemSize" width="128" height="128"/>
@@ -34,8 +35,8 @@
                 <constraints>
                     <constraint firstItem="PAa-8o-Xza" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="3Pk-Sg-VFA"/>
                     <constraint firstAttribute="trailing" secondItem="PAa-8o-Xza" secondAttribute="trailing" constant="20" id="Dyr-1o-Ewa"/>
-                    <constraint firstAttribute="bottom" secondItem="PAa-8o-Xza" secondAttribute="bottom" constant="20" id="Luo-Hl-19C"/>
                     <constraint firstItem="PAa-8o-Xza" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="iTJ-4O-2HN"/>
+                    <constraint firstAttribute="bottom" secondItem="PAa-8o-Xza" secondAttribute="bottom" constant="20" id="w0v-A8-ZAi"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         registerCollectionCell()
         registerHorizontalScroll()
         registerClickableview()
+        registerSearchBarView()
         tableView.dataSource = self
     }
     
@@ -36,6 +37,11 @@ class ViewController: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: ClickableCell.identifier)
     }
     
+    func registerSearchBarView(){
+        let nib = UINib(nibName: SearchBar.identifier, bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: SearchBar.identifier)
+    }
+    
 
 }
 
@@ -43,13 +49,22 @@ class ViewController: UIViewController {
 extension  ViewController:  UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        3
+        4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         switch indexPath.row{
+            
         case 0:
+            
+            let menuCell = tableView.dequeueReusableCell(withIdentifier: SearchBar.identifier, for: indexPath) as? SearchBar
+            
+            guard let cell = menuCell else {return UITableViewCell()}
+            
+            return cell
+            
+        case 1:
             
             let menuCell = tableView.dequeueReusableCell(withIdentifier: AmazonCollectionCell.identifier, for: indexPath) as? AmazonCollectionCell
             
@@ -57,7 +72,7 @@ extension  ViewController:  UITableViewDataSource {
             
             return cell
             
-        case 1:
+        case 2:
             
             let menuCell = tableView.dequeueReusableCell(withIdentifier: ClickableCell.identifier, for: indexPath) as? ClickableCell
             

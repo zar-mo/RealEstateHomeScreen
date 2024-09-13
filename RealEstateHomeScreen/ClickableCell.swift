@@ -17,9 +17,7 @@ class ClickableCell: UITableViewCell {
             containerView.layer.borderWidth = 1
             containerView.layer.borderColor = UIColor.lightGray.cgColor
             containerView.layer.cornerRadius = 25
-
-
-            
+   
         }
     }
     
@@ -31,7 +29,6 @@ class ClickableCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
     @IBAction func containerButton(_ sender: UIControl) {

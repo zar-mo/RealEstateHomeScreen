@@ -19,9 +19,7 @@ class HorizontalScroll: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         registerCell()
-        
-        
-
+       
         // Set up the collection view layout
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -29,11 +27,8 @@ class HorizontalScroll: UITableViewCell {
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        
-        collectionView.showsHorizontalScrollIndicator = false // Hide horizontal scroll indicator if desired
-  
-        
-        
+        collectionView.showsHorizontalScrollIndicator = false
+     
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -74,16 +69,16 @@ extension HorizontalScroll : UICollectionViewDelegate, UICollectionViewDataSourc
     
     // MARK: - UICollectionViewDelegateFlowLayout
     
-    // Set the size of each cell
+   
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        // Set the cell size, you can customize this based on your layout
-        let cellWidth = collectionView.bounds.width / 3 // Example: 3 cells visible at once
+        
+        let cellWidth = collectionView.bounds.width / 3
         return CGSize(width: cellWidth, height: collectionView.bounds.height)
     }
     
-    // Optional: Set spacing between cells
+   
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10 // Set the horizontal spacing between cells
+        return 10
     }
 
 

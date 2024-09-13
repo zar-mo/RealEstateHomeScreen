@@ -37,21 +37,17 @@ class AmazonCollectionCell: UITableViewCell {
     
 }
 
-// MARK: - UICollectionViewDataSource, UICollectionViewDelegate
 extension AmazonCollectionCell: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // Return the number of items in the section
-        return 9 // Example
+        
+        return 9
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MenuCollectionCell.identifier, for: indexPath) as? MenuCollectionCell
         
-        guard let cell = cell else {
-            print("cell failed")
-            return UICollectionViewCell()
-        }
+        guard let cell = cell else {return UICollectionViewCell()}
         return cell
     }
 }
